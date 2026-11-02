@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axiom — Deterministic Agent Swarm Operations for Enterprise</title>
+  <meta name="description" content="Deploy deterministic agent swarms across enterprise data pipelines with strict latency budgets, zero prompt drift, and cryptographic audit trails.">
+  <link rel="canonical" href="https://username.github.io/ai-b2b-saas/">
+  
+  <!-- Open Graph / Social Sharing Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://username.github.io/ai-b2b-saas/">
+  <meta property="og:title" content="Axiom — Deterministic Agent Swarm Operations for Enterprise">
+  <meta property="og:description" content="Deploy deterministic agent swarms across enterprise data pipelines with strict latency budgets, zero prompt drift, and cryptographic audit trails.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23181818'/%3E%3Cpath d='M8 22L16 10L24 22H8Z' fill='none' stroke='%2338BDF8' stroke-width='2.5' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='18' r='2' fill='%23FFFFFF'/%3E%3C/svg%3E">
+
+  <!-- Tailwind CSS CDN for utility classes -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            surface: {
+              1: '#181818',
+              2: '#1F1F1F',
+              3: '#272727',
+              4: '#313131'
+            },
+            accent: {
+              DEFAULT: '#38BDF8',
+              hover: '#0284C7'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Local Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#000000] text-white">
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Floating Navigation per B7 -->
+  <header>
+    <nav id="main-nav" class="floating-nav" aria-label="Main navigation">
+      <a href="#" class="flex items-center gap-2 text-white font-bold tracking-tight text-base focus-visible:outline-none">
+        <svg class="w-5 h-5 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polygon points="12 2 22 19 2 19"></polygon>
+          <circle cx="12" cy="13" r="2"></circle>
+        </svg>
+        <span>Axiom</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-1">
+        <a href="#features" class="nav-link">Capabilities</a>
+        <a href="#architecture" class="nav-link">Architecture</a>
+        <a href="#proof" class="nav-link">Case study</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <button type="button" class="btn-primary btn-header" data-open-modal="demo-modal">
+          <span>Book demo</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section per A2 & B5 -->
+    <section class="pt-32 pb-20 px-6 max-w-6xl mx-auto flex flex-col items-center text-center">
+      
+      <!-- Proof badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#181818] border border-[#272727] text-xs font-mono text-[#9B9B9B] mb-8">
+        <span class="w-2 h-2 rounded-full bg-[#10B981] animate-pulse"></span>
+        <span>SOC 2 Type II certified agent orchestration</span>
+      </div>
+
+      <!-- Hero Heading (Capped at 680px, no hyphens, gradient text) -->
+      <h1 class="hero-gradient-text text-4xl sm:text-5xl md:text-6xl font-semibold max-w-[680px] leading-[1.15] mb-6">
+        Deploy deterministic agent swarms across enterprise pipelines
+      </h1>
+
+      <!-- Subheadline (Capped at 680px, no hyphens) -->
+      <p class="text-lg md:text-xl text-[#9B9B9B] max-w-[680px] mb-8 leading-relaxed">
+        Orchestrate asynchronous model workflows with strict latency budgets, automated failover, and verifiable telemetry for high volume mission critical systems.
+      </p>
+
+      <!-- Primary Action & Risk Reversal -->
+      <div class="flex flex-col sm:flex-row items-center gap-4 mb-4">
+        <a href="#pricing" class="btn-primary">
+          <span>Start free trial</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <button type="button" class="btn-secondary" data-open-modal="demo-modal">
+          <span>Schedule enterprise walkthrough</span>
+        </button>
+      </div>
+
+      <p class="text-xs text-[#666666] mb-16">
+        14 day pilot. No credit card required. Production ready sandbox included.
+      </p>
+
+      <!-- Proof Strip: Enterprise Logos -->
+      <div class="w-full max-w-4xl pt-8 pb-12 border-t border-[#181818]">
+        <p class="text-xs font-mono text-[#666666] uppercase tracking-wider mb-6">
+          Powering production workloads at scale
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-8 items-center justify-center opacity-60">
+          <div class="flex items-center justify-center gap-2 font-mono text-sm tracking-widest text-[#9B9B9B]">
+            <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/></svg>
+            SYNTHETIX
+          </div>
+          <div class="flex items-center justify-center gap-2 font-mono text-sm tracking-widest text-[#9B9B9B]">
+            <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            HELION
+          </div>
+          <div class="flex items-center justify-center gap-2 font-mono text-sm tracking-widest text-[#9B9B9B]">
+            <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/></svg>
+            DATACREST
+          </div>
+          <div class="flex items-center justify-center gap-2 font-mono text-sm tracking-widest text-[#9B9B9B]">
+            <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg>
+            VOXEL
+          </div>
+          <div class="flex items-center justify-center gap-2 font-mono text-sm tracking-widest text-[#9B9B9B]">
+            <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/></svg>
+            ORBIT
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Interactive Swarm Telemetry Inspector -->
+      <div class="w-full max-w-4xl bg-[#181818] border border-[#272727] rounded-2xl p-6 text-left shadow-2xl relative">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-4 border-b border-[#272727] gap-3">
+          <div class="flex items-center gap-3">
+            <span class="flex h-3 w-3 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-[#10B981]"></span>
+            </span>
+            <span class="font-mono text-sm font-semibold text-white">us-east cluster: active-swarm-prod</span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button id="toggle-stream-btn" type="button" class="text-xs font-mono text-[#9B9B9B] hover:text-white px-2 py-1 rounded bg-[#272727] transition-colors">
+              Pause stream
+            </button>
+            <span class="text-xs font-mono text-[#666666]">v2.18.4</span>
+          </div>
+        </div>
+
+        <!-- Telemetry Metrics Bar -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
+          <div class="bg-[#1F1F1F] border border-[#272727] rounded-lg p-4">
+            <div class="text-xs font-mono text-[#9B9B9B] mb-1">Active Swarm Workers</div>
+            <div id="stat-agents" class="font-mono text-2xl font-semibold text-white">14,284</div>
+            <div class="text-[11px] text-[#10B981] mt-1">99.98% deterministic pass rate</div>
+          </div>
+          <div class="bg-[#1F1F1F] border border-[#272727] rounded-lg p-4">
+            <div class="text-xs font-mono text-[#9B9B9B] mb-1">Token Throughput</div>
+            <div id="stat-tokens" class="font-mono text-2xl font-semibold text-white">284,910 tps</div>
+            <div class="text-[11px] text-[#9B9B9B] mt-1">Direct edge cache distribution</div>
+          </div>
+          <div class="bg-[#1F1F1F] border border-[#272727] rounded-lg p-4">
+            <div class="text-xs font-mono text-[#9B9B9B] mb-1">Median Routing Latency</div>
+            <div id="stat-latency" class="font-mono text-2xl font-semibold text-white">382ms</div>
+            <div class="text-[11px] text-[#10B981] mt-1">79% faster than legacy gateways</div>
+          </div>
+        </div>
+
+        <!-- Live Streaming Log Feed -->
+        <div class="bg-[#131209] border border-[#272727] rounded-lg p-4">
+          <div class="text-xs font-mono text-[#9B9B9B] pb-2 mb-2 border-b border-[#272727] flex justify-between">
+            <span>Distributed Execution Log (Live)</span>
+            <span class="text-[#38BDF8]">Filter: all events</span>
+          </div>
+          <div id="log-feed" class="flex flex-col gap-1 min-h-[140px]">
+            <!-- Dynamic rows populated by app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tagline Reveal Section per B11 (Mandatory) -->
+    <section class="tagline-section text-center reveal-on-scroll">
+      <div id="tagline-words" class="tagline-text" data-text="Autonomous systems require deterministic control. We eliminate prompt drift, enforce strict schema validation, and guarantee verifiable agent audits at production scale.">
+        Autonomous systems require deterministic control. We eliminate prompt drift, enforce strict schema validation, and guarantee verifiable agent audits at production scale.
+      </div>
+    </section>
+
+    <!-- Mid Page: Outcome Driven Benefits Section per A2 -->
+    <section id="features" class="py-20 px-6 max-w-6xl mx-auto reveal-on-scroll">
+      <div class="text-center max-w-[680px] mx-auto mb-16">
+        <span class="text-xs font-mono text-[#38BDF8] uppercase tracking-wider block mb-2">Architected for production</span>
+        <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-4">
+          Engineered for teams that cannot tolerate hallucinated failures
+        </h2>
+        <p class="text-base text-[#9B9B9B]">
+          Build resilient AI workflows with the same operational rigor as financial transaction engines and mission critical databases.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Benefit Card 1 -->
+        <div class="card-base flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-[#1F1F1F] border border-[#272727] flex items-center justify-center text-[#38BDF8] mb-6">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">
+              Deterministic validation
+            </h3>
+            <p class="text-sm text-[#9B9B9B] leading-relaxed mb-6">
+              Enforce strict typed JSON schema guards and zero temperature execution rules on every single invocation to completely eliminate unexpected output drift.
+            </p>
+          </div>
+          <div class="card-inner-box">
+            <span class="text-xs font-mono text-[#10B981] block">0.00% schema validation errors</span>
+            <span class="text-xs text-[#666666]">Over 42M production requests tracked</span>
+          </div>
+        </div>
+
+        <!-- Benefit Card 2 -->
+        <div class="card-base flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-[#1F1F1F] border border-[#272727] flex items-center justify-center text-[#38BDF8] mb-6">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">
+              Sub second intelligent routing
+            </h3>
+            <p class="text-sm text-[#9B9B9B] leading-relaxed mb-6">
+              Dynamic semantic caching and instant edge failover reduce median round trip latency from 1,840ms down to 382ms across multi model providers.
+            </p>
+          </div>
+          <div class="card-inner-box">
+            <span class="text-xs font-mono text-[#38BDF8] block">79.2% latency reduction</span>
+            <span class="text-xs text-[#666666]">Automated fallback between providers</span>
+          </div>
+        </div>
+
+        <!-- Benefit Card 3 -->
+        <div class="card-base flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-[#1F1F1F] border border-[#272727] flex items-center justify-center text-[#38BDF8] mb-6">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                <path d="M7 7h10"></path>
+                <path d="M7 12h10"></path>
+                <path d="M7 17h10"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">
+              Cryptographic audit trails
+            </h3>
+            <p class="text-sm text-[#9B9B9B] leading-relaxed mb-6">
+              Cryptographically sign and index prompt snapshots, raw tool calls, and model reasoning traces for SOC 2 Type II and HIPAA audit compliance.
+            </p>
+          </div>
+          <div class="card-inner-box">
+            <span class="text-xs font-mono text-white block">Immutable SHA256 logs</span>
+            <span class="text-xs text-[#666666]">Built for enterprise compliance teams</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- How It Works Section per A2 -->
+    <section id="architecture" class="py-20 px-6 max-w-6xl mx-auto border-t border-[#181818] reveal-on-scroll">
+      <div class="text-center max-w-[680px] mx-auto mb-16">
+        <span class="text-xs font-mono text-[#38BDF8] uppercase tracking-wider block mb-2">Integration in minutes</span>
+        <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-4">
+          Three simple steps to enterprise scale
+        </h2>
+        <p class="text-base text-[#9B9B9B]">
+          Drop into your existing Python, TypeScript, or Go stack using our native SDKs or standard OpenAPI endpoints.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-[#181818] border border-[#272727] rounded-xl p-6">
+          <div class="font-mono text-xs text-[#38BDF8] mb-3">01 / DECLARE</div>
+          <h3 class="text-lg font-semibold text-white mb-2">Connect data stores & APIs</h3>
+          <p class="text-sm text-[#9B9B9B] leading-relaxed">
+            Attach Postgres databases, vector collections, and internal REST microservices with automated role based access controls.
+          </p>
+        </div>
+
+        <div class="bg-[#181818] border border-[#272727] rounded-xl p-6">
+          <div class="font-mono text-xs text-[#38BDF8] mb-3">02 / CONSTRAIN</div>
+          <h3 class="text-lg font-semibold text-white mb-2">Define validation guardrails</h3>
+          <p class="text-sm text-[#9B9B9B] leading-relaxed">
+            Configure Pydantic models, token rate limits, cost allocations, and fallback redundancy rules without writing boilerplate.
+          </p>
+        </div>
+
+        <div class="bg-[#181818] border border-[#272727] rounded-xl p-6">
+          <div class="font-mono text-xs text-[#38BDF8] mb-3">03 / MONITOR</div>
+          <h3 class="text-lg font-semibold text-white mb-2">Track real time telemetry</h3>
+          <p class="text-sm text-[#9B9B9B] leading-relaxed">
+            Inspect live agent executions, detect anomalies automatically, and export immutable logs directly to Datadog or Splunk.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Quick Interactive Developer Snippet -->
+      <div class="mt-12 bg-[#181818] border border-[#272727] rounded-xl p-6 max-w-3xl mx-auto">
+        <div class="flex items-center justify-between pb-3 mb-4 border-b border-[#272727]">
+          <span class="text-xs font-mono text-[#9B9B9B]">bash / curl quickstart</span>
+          <button id="copy-curl-btn" type="button" class="text-xs font-mono text-[#38BDF8] hover:text-white transition-colors">
+            Copy snippet
+          </button>
+        </div>
+        <pre class="font-mono text-xs text-[#9B9B9B] overflow-x-auto leading-relaxed"><code id="curl-code">curl -X POST https://api.axiom-ops.io/v1/swarms/dispatch \
+  -H "Authorization: Bearer ax_live_849201" \
+  -H "Content-Type: application/json" \
+  -d '{"task": "reconcile_ledger", "schema": "urn:axiom:fin_v3", "budget_ms": 500}'</code></pre>
+      </div>
+    </section>
+
+    <!-- Social Proof Case Study per A2 -->
+    <section id="proof" class="py-20 px-6 max-w-4xl mx-auto border-t border-[#181818] reveal-on-scroll">
+      <div class="bg-[#181818] border border-[#272727] rounded-2xl p-8 sm:p-12 relative">
+        <div class="text-xs font-mono text-[#10B981] mb-6 flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          VERIFIED ENTERPRISE CASE STUDY
+        </div>
+
+        <blockquote class="text-xl sm:text-2xl font-medium text-white leading-snug mb-8">
+          "Before Axiom, our model workflows experienced intermittent schema failures during peak transaction windows. Axiom cut our financial ledger reconciliation processing from 14 hours down to 18 minutes while lowering LLM expenditure by 41.6%."
+        </blockquote>
+
+        <div class="flex items-center justify-between flex-wrap gap-4 pt-6 border-t border-[#272727]">
+          <div>
+            <div class="font-semibold text-white text-base">Elena Vance</div>
+            <div class="text-sm text-[#9B9B9B]">VP of Core Infrastructure at Helion Financial</div>
+          </div>
+          <div class="flex gap-8 font-mono text-right">
+            <div>
+              <div class="text-xl font-bold text-[#38BDF8]">14h → 18m</div>
+              <div class="text-xs text-[#666666]">Job duration</div>
+            </div>
+            <div>
+              <div class="text-xl font-bold text-[#10B981]">41.6%</div>
+              <div class="text-xs text-[#666666]">Cost savings</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section per A2 -->
+    <section id="pricing" class="py-20 px-6 max-w-6xl mx-auto border-t border-[#181818] reveal-on-scroll">
+      <div class="text-center max-w-[680px] mx-auto mb-12">
+        <span class="text-xs font-mono text-[#38BDF8] uppercase tracking-wider block mb-2">Predictable investment</span>
+        <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-4">
+          Transparent pricing for production scale
+        </h2>
+        <p class="text-base text-[#9B9B9B] mb-8">
+          No hidden surge charges. No per seat penalties. Scale by deterministic agent executions.
+        </p>
+
+        <!-- Monthly vs Annual Toggle -->
+        <div class="inline-flex items-center gap-3 bg-[#181818] border border-[#272727] p-1.5 rounded-full">
+          <span class="text-sm text-[#9B9B9B] pl-3">Monthly</span>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="billing-toggle" class="sr-only peer">
+            <div class="w-11 h-6 bg-[#272727] peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#38BDF8]"></div>
+          </label>
+          <span class="text-sm text-white pr-3 flex items-center gap-1.5 font-medium">
+            Annual <span class="text-[11px] font-mono text-[#10B981] bg-[rgba(16,185,129,0.1)] px-2 py-0.5 rounded-full">Save 20%</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Starter Plan -->
+        <div class="card-base flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-2">Sandbox Pilot</h3>
+            <p class="text-sm text-[#9B9B9B] mb-6">For engineering evaluation and prototyping.</p>
+            <div class="mb-6">
+              <span id="price-starter" class="text-4xl font-bold font-mono text-white">$0</span>
+              <span class="text-xs text-[#666666] billing-period-label">/ 14 day trial</span>
+            </div>
+            <ul class="text-sm text-[#9B9B9B] space-y-3 mb-8">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Up to 5 concurrent agent workers
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                100,000 monthly schema validations
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Community Discord and docs
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="btn-secondary w-full" data-open-modal="demo-modal">
+            Start pilot trial
+          </button>
+        </div>
+
+        <!-- Scale Plan (Featured) -->
+        <div class="card-base border-[#383838] bg-[#1F1F1F] flex flex-col justify-between relative shadow-xl">
+          <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#38BDF8] text-black text-[11px] font-mono font-bold px-3 py-0.5 rounded-full uppercase">
+            Most popular
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-2">Production Scale</h3>
+            <p class="text-sm text-[#9B9B9B] mb-6">For scaling product teams with live users.</p>
+            <div class="mb-6">
+              <span id="price-scale" class="text-4xl font-bold font-mono text-white">$480</span>
+              <span class="text-xs text-[#9B9B9B] billing-period-label">/ month</span>
+            </div>
+            <ul class="text-sm text-[#9B9B9B] space-y-3 mb-8">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                50 concurrent agent workers
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                5,000,000 monthly validations
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Semantic cache routing layer
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                30 day immutable audit log retention
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Priority Slack channel support
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="btn-primary w-full" data-open-modal="demo-modal">
+            Deploy production cluster
+          </button>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="card-base flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-2">Dedicated Enterprise</h3>
+            <p class="text-sm text-[#9B9B9B] mb-6">For regulated banking, healthcare, and defense.</p>
+            <div class="mb-6">
+              <span class="text-4xl font-bold font-mono text-white">Custom</span>
+              <span class="text-xs text-[#666666]">/ tailored SLA</span>
+            </div>
+            <ul class="text-sm text-[#9B9B9B] space-y-3 mb-8">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Unlimited concurrent agents
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                VPC private cloud or on premise deployment
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Custom model fine tuning & guardrails
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                99.99% uptime guarantee with financial penalty
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Dedicated solutions architect
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="btn-secondary w-full" data-open-modal="demo-modal">
+            Contact enterprise team
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Section per A2 -->
+    <section id="faq" class="py-20 px-6 max-w-4xl mx-auto border-t border-[#181818] reveal-on-scroll">
+      <div class="text-center max-w-[680px] mx-auto mb-16">
+        <span class="text-xs font-mono text-[#38BDF8] uppercase tracking-wider block mb-2">Technical answers</span>
+        <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-4">
+          Frequently asked technical questions
+        </h2>
+        <p class="text-base text-[#9B9B9B]">
+          Clear architectural details without sales fluff.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <details class="faq-details">
+          <summary class="faq-summary">
+            <span>How does Axiom enforce deterministic execution?</span>
+            <svg class="w-4 h-4 faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-content">
+            Axiom injects runtime validation schemas directly into the generation loop. If a downstream LLM produces tokens deviating from the target Pydantic or JSON schema specification, the orchestrator triggers an immediate micro retry with explicit differential error feedback within a strict 50ms window.
+          </div>
+        </details>
+
+        <details class="faq-details">
+          <summary class="faq-summary">
+            <span>Can we deploy Axiom within our private AWS or GCP VPC?</span>
+            <svg class="w-4 h-4 faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-content">
+            Yes. Enterprise licenses include Helm charts and Terraform templates for automated Kubernetes deployment inside your private VPC. In this configuration, zero telemetry or model payloads ever leave your security perimeter.
+          </div>
+        </details>
+
+        <details class="faq-details">
+          <summary class="faq-summary">
+            <span>What happens when an upstream provider experiences an outage?</span>
+            <svg class="w-4 h-4 faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-content">
+            Axiom maintains active health checks across providers. If an endpoint exceeds your configured latency budget (for example 1,200ms) or returns consecutive HTTP 503 errors, execution automatically shifts to your defined secondary model provider without dropping the active client request.
+          </div>
+        </details>
+
+        <details class="faq-details">
+          <summary class="faq-summary">
+            <span>How is PII handled during vector database lookups?</span>
+            <svg class="w-4 h-4 faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-content">
+            Our edge proxy passes prompts through a localized named entity recognition pipeline before reaching external model APIs. Sensitive entities such as social security numbers, credit card tokens, and internal email addresses are substituted with cryptographic pseudonyms and reassembled on return.
+          </div>
+        </details>
+
+        <details class="faq-details">
+          <summary class="faq-summary">
+            <span>Does Axiom use our company data to train public foundation models?</span>
+            <svg class="w-4 h-4 faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-content">
+            Never. Our enterprise agreements explicitly forbid model training on customer payloads. All zero retention configurations ensure that runtime prompts are flushed from memory immediately following execution validation.
+          </div>
+        </details>
+
+        <details class="faq-details">
+          <summary class="faq-summary">
+            <span>How do you guarantee 99.99% uptime for asynchronous agents?</span>
+            <svg class="w-4 h-4 faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-content">
+            Our control plane operates multi region active active clusters across Northern Virginia and Frankfurt, backed by distributed Raft consensus state machines and automated queue drainage.
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- Final CTA Section per A2 -->
+    <section class="py-24 px-6 max-w-4xl mx-auto text-center border-t border-[#181818] reveal-on-scroll">
+      <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-6">
+        Ready to operate autonomous swarms with deterministic precision?
+      </h2>
+      <p class="text-base text-[#9B9B9B] max-w-[680px] mx-auto mb-8">
+        Join hundreds of engineering teams delivering production reliability across complex multi agent workflows.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+        <a href="#pricing" class="btn-primary">
+          <span>Start free trial</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <button type="button" class="btn-secondary" data-open-modal="demo-modal">
+          <span>Book enterprise walkthrough</span>
+        </button>
+      </div>
+
+      <p class="text-xs text-[#666666]">
+        14 day sandbox evaluation. No credit card required. Cancel anytime.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer per B10 -->
+  <footer class="border-t border-[#181818] py-12 px-6 max-w-6xl mx-auto text-sm text-[#9B9B9B]">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-[#181818]">
+      <div class="flex items-center gap-2 text-white font-bold text-base">
+        <svg class="w-5 h-5 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 22 19 2 19"></polygon>
+          <circle cx="12" cy="13" r="2"></circle>
+        </svg>
+        <span>Axiom Systems Inc.</span>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-6 text-xs text-[#9B9B9B]">
+        <a href="#" class="hover:text-white transition-colors">Documentation</a>
+        <a href="#" class="hover:text-white transition-colors">API Reference</a>
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        <a href="#" class="hover:text-white transition-colors">Security Whitepaper</a>
+        <a href="404.html" class="hover:text-white transition-colors">Status Page</a>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 text-xs text-[#666666]">
+      <div>
+        &copy; 2026 Axiom Systems Inc. All rights reserved.
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[#10B981]"></span>
+        <span class="text-[#9B9B9B]">Operational telemetry: all systems normal (99.98% uptime)</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Native Modal Dialog for Enterprise Demo per B9 & B10 -->
+  <dialog id="demo-modal" class="enterprise-modal" aria-labelledby="modal-title">
+    <div class="flex items-center justify-between pb-4 mb-4 border-b border-[#272727]">
+      <h3 id="modal-title" class="text-lg font-semibold text-white">Schedule Enterprise Walkthrough</h3>
+      <button id="close-modal-btn" type="button" class="text-[#9B9B9B] hover:text-white p-1 rounded transition-colors" aria-label="Close dialog">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Booking Form -->
+    <form id="demo-form" class="space-y-4">
+      <div>
+        <label for="demo-name" class="block text-xs font-mono text-[#9B9B9B] mb-1">Full Name</label>
+        <input type="text" id="demo-name" required placeholder="Elena Vance" class="input-field">
+      </div>
+
+      <div>
+        <label for="demo-email" class="block text-xs font-mono text-[#9B9B9B] mb-1">Corporate Work Email</label>
+        <input type="email" id="demo-email" required placeholder="elena@company.com" class="input-field">
+      </div>
+
+      <div>
+        <label for="demo-scale" class="block text-xs font-mono text-[#9B9B9B] mb-1">Monthly Model Invocations</label>
+        <select id="demo-scale" class="input-field text-white">
+          <option value="pilot">Less than 500,000 requests</option>
+          <option value="scale">500,000 to 5,000,000 requests</option>
+          <option value="enterprise">Over 5,000,000 requests (Dedicated VPC)</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="demo-notes" class="block text-xs font-mono text-[#9B9B9B] mb-1">Primary Architecture Goal</label>
+        <textarea id="demo-notes" rows="2" placeholder="e.g. Reduce median latency and eliminate schema validation drift" class="input-field"></textarea>
+      </div>
+
+      <div class="pt-2">
+        <button type="submit" class="btn-primary w-full">
+          Confirm walkthrough reservation
+        </button>
+      </div>
+
+      <p class="text-[11px] text-[#666666] text-center">
+        Under NDA by default. Our solutions engineering team will reply within 2 business hours.
+      </p>
+    </form>
+
+    <!-- Success Confirmation State per B8 & B9 -->
+    <div id="demo-success" style="display: none;" class="text-center py-6">
+      <div class="w-12 h-12 rounded-full bg-[rgba(16,185,129,0.1)] text-[#10B981] flex items-center justify-center mx-auto mb-4">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h4 class="text-lg font-semibold text-white mb-2">Walkthrough scheduled</h4>
+      <p class="text-sm text-[#9B9B9B] mb-6">
+        An invitation and calendar invite have been dispatched to your corporate inbox.
+      </p>
+      <button type="button" onclick="document.getElementById('demo-modal').close()" class="btn-secondary">
+        Return to platform overview
+      </button>
+    </div>
+  </dialog>
+
+  <!-- Script initialization -->
+  <script src="app.js"></script>
+</body>
+</html>

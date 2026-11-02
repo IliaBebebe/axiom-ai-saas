@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg-primary: #000000;
+  --bg-surface-1: #181818;
+  --bg-surface-2: #1F1F1F;
+  --bg-surface-3: #272727;
+  --bg-surface-4: #313131;
+  --border-subtle: #272727;
+  --border-active: #383838;
+  --text-primary: #FFFFFF;
+  --text-secondary: #9B9B9B;
+  --text-muted: #666666;
+  --accent-primary: #38BDF8;
+  --accent-hover: #0284C7;
+  --status-emerald: #10B981;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+  --ease-base: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Typography Rules */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+p, li, dd {
+  text-wrap: pretty;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Skip link for keyboard accessibility */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  background: var(--bg-surface-2);
+  color: var(--text-primary);
+  padding: 8px 16px;
+  z-index: 1000;
+  border-radius: 8px;
+  border: 1px solid var(--border-active);
+  font-size: 14px;
+  font-weight: 600;
+  transition: top 0.2s var(--ease-base);
+}
+
+.skip-link:focus {
+  top: 16px;
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* Hero text gradient (allowed per B5) */
+.hero-gradient-text {
+  background: linear-gradient(90deg, #FFFFFF 0%, #9B9B9B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Floating Navigation */
+.floating-nav {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background: rgba(24, 24, 24, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 9999px;
+  padding: 8px 16px;
+  width: min(92%, 1080px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: border-color 0.3s var(--ease-base), background-color 0.3s var(--ease-base);
+}
+
+.floating-nav.scrolled {
+  background: rgba(24, 24, 24, 0.92);
+  border-color: var(--border-active);
+}
+
+/* Navigation Links */
+.nav-link {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  transition: color 0.3s var(--ease-base), background-color 0.3s var(--ease-base);
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-primary);
+  background: var(--bg-surface-2);
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* Standard Buttons per B1 & B2 */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--text-primary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s var(--ease-base), opacity 0.3s var(--ease-base), background-color 0.3s var(--ease-base);
+}
+
+.btn-primary:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+.btn-header {
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 9999px;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--bg-surface-2);
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s var(--ease-base), border-color 0.3s var(--ease-base), transform 0.15s var(--ease-base);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-surface-3);
+  border-color: var(--border-active);
+  transform: translateY(-1px);
+}
+
+.btn-secondary:active {
+  transform: scale(0.98);
+}
+
+.btn-secondary:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* Tagline Reveal Section per B11 */
+.tagline-section {
+  padding: 96px 24px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.tagline-text {
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.tagline-word {
+  opacity: 0.28;
+  display: inline-block;
+  margin-right: 0.25em;
+  transform: translateY(4px);
+  transition: opacity 0.5s var(--ease-base), transform 0.5s var(--ease-base);
+}
+
+.tagline-word.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Flat Cards & Nested Radius */
+.card-base {
+  background-color: var(--bg-surface-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 24px;
+  transition: border-color 0.3s var(--ease-base), transform 0.3s var(--ease-base);
+}
+
+.card-base:hover {
+  border-color: var(--border-active);
+}
+
+/* Inner elements respect: inner radius = outer radius - gap */
+/* outer: 16px, padding: 24px -> gap 24px < 32px -> inner radius = 16 - 24 < 0 -> 4px fallback */
+.card-inner-box {
+  background-color: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* Scroll reveal helper */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s var(--ease-base), transform 0.7s var(--ease-base);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* FAQ Accordion */
+.faq-details {
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  background-color: var(--bg-surface-1);
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: border-color 0.3s var(--ease-base);
+}
+
+.faq-details[open] {
+  border-color: var(--border-active);
+  background-color: var(--bg-surface-2);
+}
+
+.faq-summary {
+  padding: 16px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-icon {
+  transition: transform 0.3s var(--ease-base);
+  color: var(--text-secondary);
+}
+
+.faq-details[open] .faq-icon {
+  transform: rotate(180deg);
+  color: var(--text-primary);
+}
+
+.faq-content {
+  padding: 0 20px 20px 20px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Native Modal Dialog */
+dialog.enterprise-modal {
+  margin: auto;
+  background: var(--bg-surface-1);
+  color: var(--text-primary);
+  border: 1px solid var(--border-active);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 520px;
+  width: 90vw;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.8);
+}
+
+dialog.enterprise-modal::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Accessibility: Form controls */
+.input-field {
+  width: 100%;
+  background-color: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: var(--font-sans);
+  transition: border-color 0.2s var(--ease-base);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal-on-scroll,
+  .tagline-word,
+  .btn-primary,
+  .btn-secondary {
+    transition: opacity 0.2s ease !important;
+    transform: none !important;
+  }
+  .tagline-word {
+    opacity: 1 !important;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Cluster Route Not Found | Axiom</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23181818'/%3E%3Cpath d='M8 22L16 10L24 22H8Z' fill='none' stroke='%2338BDF8' stroke-width='2.5' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='18' r='2' fill='%23FFFFFF'/%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#000000] text-white flex flex-col justify-between min-h-screen">
+  
+  <header class="p-6">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 text-white font-bold tracking-tight text-base">
+        <svg class="w-5 h-5 text-[#38BDF8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polygon points="12 2 22 19 2 19"></polygon>
+          <circle cx="12" cy="13" r="2"></circle>
+        </svg>
+        <span>Axiom</span>
+      </a>
+      <span class="text-xs font-mono text-[#9B9B9B]">HTTP 404 STATUS</span>
+    </div>
+  </header>
+
+  <main class="flex-1 flex items-center justify-center px-6">
+    <div class="max-w-md w-full text-center bg-[#181818] border border-[#272727] rounded-2xl p-8">
+      <div class="font-mono text-xs text-[#38BDF8] mb-3">ERROR 404 / ROUTE NOT RESOLVED</div>
+      <h1 class="text-2xl font-semibold text-white mb-3">Target cluster endpoint does not exist</h1>
+      <p class="text-sm text-[#9B9B9B] leading-relaxed mb-6">
+        The orchestrator could not locate the requested resource across our active nodes. Verify the URL or return to the main dashboard.
+      </p>
+      <a href="index.html" class="btn-primary inline-flex">
+        <span>Return to platform overview</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="p-6 text-center text-xs text-[#666666]">
+    &copy; 2026 Axiom Systems Inc. All systems operational.
+  </footer>
+
+</body>
+</html>
